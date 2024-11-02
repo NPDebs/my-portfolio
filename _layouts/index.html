@@ -1,0 +1,12 @@
+---
+layout: base
+---
+
+{% if page.url == "/" or page.url == "" %}
+  {% include header.html %}
+{% else %}
+  {% include nav.html %}
+{% endif %}
+
+{{ content }}
+{% include footer.html %}

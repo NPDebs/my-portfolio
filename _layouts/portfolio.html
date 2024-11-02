@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+
+<main class="content">
+    <section class="portfolio_item">
+        <div class="portfolio_container">
+            <h1 class="portfolio_title">{{ page.title }}</h1>
+            <img src="{{ page.image }}" alt="{{ page.title }}" class="portfolio_img">
+            <p class="portfolio_description">{{ page.description }}</p>
+            <div class="portfolio_content">
+                {{ content }}
+            </div>
+        </div>
+    </section>
+</main>
