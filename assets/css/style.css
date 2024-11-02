@@ -125,7 +125,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: blue;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
@@ -655,4 +655,108 @@ section .about {
 }
 #events .portfolio_card, #talks .portfolio_card {
     background-color: #fcf9f9;
+}
+
+/* New classes -- to be updated */
+#featured {
+    padding: 50px 0;
+    background-color: #242424;
+}
+
+/* Portfolio Card Container */
+.portfolio_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio_card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styling */
+.portfolio_img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #f9004d;
+}
+
+/* Card Content */
+.portfolio_data {
+    padding: 20px;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+.portfolio_title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #f9004d;
+}
+
+.portfolio_description {
+    font-size: 1em;
+    color: #cccccc;
+    margin-bottom: 20px;
+    line-height: 1.4em;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background-color: #f9004d;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #f9004d;
+    transform: scale(1.05);
+}
+
+/* Layout for Individual Portfolio Pages */
+.portfolio_item {
+    padding: 50px;
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+.portfolio_item h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #f9004d;
+}
+
+.portfolio_item .portfolio_img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 30px;
+    border-radius: 8px;
+}
+
+.portfolio_content {
+    font-size: 1.1em;
+    line-height: 1.8em;
+    color: #cccccc;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
 }
