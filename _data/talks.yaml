@@ -1,0 +1,16 @@
+- title: "Intro To GitHub"
+  date: "2024-10-10"
+  description: "OLS-9 Week 5."
+  image: "images/ols-week-5-github.png"
+  link: "/talks/intro-to-github"
+
+- title: "Emerging Voice Plenary"
+  date: "2024-11-02"
+  description: "..."
+  image: "images/rsecon24-talk.jpg"
+  link: "/talks/emerging-voice-plenary"
+
+- title: "Bioinformatics Workshop"
+  description: "Led a hands-on session on GitHub for bioinformatics projects."
+  image: "images/ols-week-5-github.png"
+  link: "/talks/bioinformatics-workshop"
