@@ -5,7 +5,8 @@
             {% include event_card.html event=event %}
         {% endfor %}
     </div>
-    <a href="/events" class="btn">View All Events</a>
+    <a href="{{ '/events' | relative_url }}" class="btn">View All Events</a>
+
 </section>
 
 <section class="featured" id="featured">
@@ -15,5 +16,5 @@
             {% include talk_card.html talk=talk %}
         {% endfor %}
     </div>
-    <a href="/talks" class="btn">View All Talks</a>
+    <a href="{{ '/talks' | relative_url }}" class="btn">View All Talks</a>
 </section>
