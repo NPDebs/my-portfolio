@@ -6,7 +6,7 @@
                 <h3 class="portfolio_title">{{ talk.title }}</h3>
                 <p class="portfolio_description">{{ talk.description }}</p>
                 <button class="btn">
-                    <a href="{{ talk.link }}" target="_blank">Learn more</a>
+                    <a href="{{ talk.link | relative_url }}" target="_blank">Learn more</a>
                 </button>
             </div>
         </div>

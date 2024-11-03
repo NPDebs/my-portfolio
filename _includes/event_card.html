@@ -6,7 +6,7 @@
                 <h3 class="portfolio_title">{{ event.title }}</h3>
                 <p class="portfolio_description">{{ event.description }}</p>
                 <button class="btn">
-                    <a href="{{ event.link }}" target="_blank">Learn more</a>
+                    <a href="{{ 'event.link' | relative_url }}" target="_blank">Learn more</a>
                 </button>
             </div>
         </div>
