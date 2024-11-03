@@ -2,7 +2,7 @@ title: "Deborah Udoh's Portfolio"
 email: deborahudoh02@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # Leave empty if deploying to the root
-url: "https://npdebs.github.io"
+url: "https://npdebs.github.io/my-portfolio/"
 twitter_username: jekyllrb
 github_username:  jekyll
 
