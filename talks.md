@@ -11,3 +11,5 @@ title: "Talks & Trainings"
         {% endfor %}
     </div>
 </section>
+
+## Minor change
