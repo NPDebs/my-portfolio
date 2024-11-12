@@ -17,7 +17,7 @@ title: "Home"
 </section>
 
 <div class="contact-me" id="contact">
-    <p>Let me be of service to you.</p>
+    <p>Want to collaborate on a project?</p>
     <a class="button" href="mailto:{{ site.email }}" target="_parent">Contact Me!</a>
 </div>
     
