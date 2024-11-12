@@ -1,0 +1,20 @@
+<section class="featured" id="featured">
+    <h2 class="section_title">Featured Events</h2>
+    <div class="box portfolio_box">
+        {% for event in site.data.events limit:2 %}
+            {% include event_card.html event=event %}
+        {% endfor %}
+    </div>
+    <a href="{{ '/events' | relative_url }}" class="btn">View All Events</a>
+
+</section>
+
+<section class="featured" id="featured">
+    <h2 class="section_title">Featured Talks</h2>
+    <div class="box portfolio_box">
+        {% for talk in site.data.talks limit:2 %}
+            {% include talk_card.html talk=talk %}
+        {% endfor %}
+    </div>
+    <a href="{{ '/talks' | relative_url }}" class="btn">View All Talks</a>
+</section>
