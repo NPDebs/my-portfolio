@@ -1,0 +1,91 @@
+# _data/portfolio.yml
+
+- title: "SIDS Awareness"
+  description: "A repo detailing ongoing research on maternal awareness of SIDS."
+  image: "images/SIDS.png"
+  link: "https://npdebs.github.io/Awareness-on-SIDS/"
+
+- title: "Weather App"
+  description: "A JavaScript application that allows users to check the weather."
+  image: "images/weather_app.png"
+  link: "https://npdebs.github.io/Weather-App/"
+
+- title: "DogHubApp"
+  description: "Like CatFeverApp, but for dogs!"
+  image: "images/DogHubApp.png"
+  link: "https://npdebs.github.io/DogHubApp/"
+
+- title: "CatFeverApp"
+  description: "A JavaScript application that allows one to view an infinite number of cat images."
+  image: "images/CatFeverImg.png"
+  link: "https://npdebs.github.io/CatPhotoApp/"
+
+- title: "RPS Game"
+  description: "Classic Rock, Paper, Scissors game, played against a computer."
+  image: "images/RPG_Game.png"
+  link: "https://npdebs.github.io/RPS-Game/"
+
+- title: "Tip Calculator App"
+  description: "An app that calculates the total cost of a meal, taking the percentage tip into consideration."
+  image: "images/TipCalcApp.png"
+  link: "https://npdebs.github.io/TipCalculatorApp/"
+
+- title: "Favicon Generator Website"
+  description: "A site where images are uploaded and converted to favicons for download."
+  image: "images/conficon.png"
+  link: "http://conficon.herokuapp.com/"
+
+- title: "Form Validation"
+  description: "A form where user inputs details that can only be submitted if they meet certain criteria."
+  image: "images/js_validation.png"
+  link: "https://npdebs.github.io/JavaScript-Form-Validation/"
+
+- title: "JavaScript Mini-project"
+  description: "A page with two buttons: one for inputting details, and one for displaying those details."
+  image: "images/js_mini_project.png"
+  link: "https://npdebs.github.io/JavaScript-Mini-project/"
+
+- title: "5x5 Chessboard"
+  description: "A fun little game interface representing a 5x5 chessboard with alternating colors."
+  image: "images/chessboard.png"
+  link: "https://codepen.io/NPDee/full/mdXxmdO"
+
+- title: "CSS Grid"
+  description: "Recreating a design using CSS grid."
+  image: "images/css-grid.png"
+  link: "https://npdebs.github.io/CSS-Flexbox-Grid/grid.html"
+
+- title: "CSS Flexbox"
+  description: "Recreating a design using CSS flexbox."
+  image: "images/css_flexbox.png"
+  link: "#"
+
+- title: "Registration Page"
+  description: "A responsive signup page designed to suit all viewports."
+  image: "images/reg_form.png"
+  link: "https://npdebs.github.io/Responsive-Registration-Page/"
+
+- title: "Product Landing Page"
+  description: "Template for a landing page which is responsive on all devices."
+  image: "images/landing_page.png"
+  link: "https://npdebs.github.io/Product-Landing-Page/"
+
+- title: "Result Table"
+  description: "A table design to hold the scoresheet of a class."
+  image: "images/HTML_Table.png"
+  link: "https://codepen.io/NPDee/full/poaWrXv"
+
+- title: "Minikube Logo"
+  description: "A white version of the Minikube logo for dark mode."
+  image: "images/minikube-white.png"
+  link: "#"
+
+- title: "Calico Logo"
+  description: "A white version of the Calico logo for dark mode."
+  image: "images/layer5-calico-pr.png"
+  link: "#"
+
+- title: "Kind Logo"
+  description: "A white version of the Kind logo for dark mode."
+  image: "images/kind-layer5.png"
+  link: "https://github.com/layer5io/layer5/blob/master/src/sections/Meshery/Meshery-platforms/supported-icons/kind-logo-white.svg"
