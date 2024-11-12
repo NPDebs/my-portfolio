@@ -39,6 +39,7 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./build/
+          token: ${{ secrets.PAT_GH_ACTION }}
 
       - name: Cleanup Preview
         if: github.event.action == 'closed'
