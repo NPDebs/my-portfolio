@@ -13,6 +13,10 @@ concurrency: preview-${{ github.ref }}
 jobs:
   deploy-preview:
     runs-on: ubuntu-20.04
+    permissions:
+      contents: write
+      pull-requests: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -21,7 +25,7 @@ jobs:
         if: github.event.action != 'closed'
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0 
+          ruby-version: 3.0
           bundler-cache: true
 
       - name: Install Jekyll and Bundler
@@ -39,7 +43,14 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./build/
-          token: ${{ secrets.PAT_GH_ACTION }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Post deployment comment
+        if: github.event.action != 'closed'
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          message: ":rocket: Preview deployed to [PR Preview](https://NPDebs.github.io/my-portfolio/pr-preview/pr-${{ github.event.number }}/)"
+          GITHUB_TOKEN: ${{ secrets.PAT_GH_ACTION }}
 
       - name: Cleanup Preview
         if: github.event.action == 'closed'
