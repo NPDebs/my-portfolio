@@ -17,13 +17,30 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install and Build
+      - name: Set up Ruby
+        if: github.event.action != 'closed'
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0 
+          bundler-cache: true
+
+      - name: Install Jekyll and Bundler
         if: github.event.action != 'closed'
         run: |
-          npm install
-          npm run build
+          gem install bundler
+          bundle install
+
+      - name: Build Jekyll Site
+        if: github.event.action != 'closed'
+        run: bundle exec jekyll build --destination ./build
 
       - name: Deploy preview
+        if: github.event.action != 'closed'
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./build/
+          token: ${{ secrets.PAT_GH_ACTION }}
+
+      - name: Cleanup Preview
+        if: github.event.action == 'closed'
+        run: echo "Cleaning up preview for closed PR"
